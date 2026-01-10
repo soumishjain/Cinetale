@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({elem}) => {
   return (
-     <div className='min-w-[280px] flex flex-col gap-2'>
+     <div className='min-w-[280px] cursor-pointer flex flex-col gap-2'>
       <img className='w-full h-[380px] rounded-2xl object-center object-cover ' 
       src={elem.poster} alt="" />
         <div className='text-white pl-2'>
