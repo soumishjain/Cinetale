@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from '../../assets/Moctale-logo-HQ.svg'
+import logo from '../../assets/FullLogo_Transparent_NoBuffer.png'
 const Leftnav = () => {
   return (
     <div className='border-2 flex flex-col justify-between rounded-xl border-white/40 w-[100%] h-full bg-black/20 text-white/40 py-4 px-3'>
       <div className='flex flex-col gap-2'>
-        <div className='flex gap-5 justify-center items-center'>
+        <div className='flex gap-5 justify-center items-center mb-5'>
         <img className='object-center object-cover h-5' src={logo} alt="" />
         <i className="ri-menu-fold-line text-2xl"></i>
       </div>
