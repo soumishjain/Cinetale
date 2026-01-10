@@ -15,6 +15,7 @@ const Allcomp = () => {
         <Mainsec />
       </div>
     </div>
+    
   )
 }
 

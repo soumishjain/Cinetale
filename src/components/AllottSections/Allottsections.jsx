@@ -11,8 +11,8 @@ const Allottsections = () => {
     <div className='mt-10'>
         <MightLike name='Might Like'/>
         <Netflix name='Netflix'/>
-        <Amazon name='Amazon'/>
-        <Apple name='Apple'/>
+        <Amazon name='Amazon Prime'/>
+        <Apple name='Apple Tv'/>
         <Disney name='Jio Hotstar'/>
     </div>
   )

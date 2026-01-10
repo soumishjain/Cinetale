@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({elem}) => {
   return (
     <div style={{backgroundImage:`url(${elem.poster})`}} className="snap-start flex-shrink-0 border-2 border-white/40 bg-cover bg-center bg-black mt-8 w-full rounded-2xl text-white">
-      <div className='w-[40%] px-6 flex flex-col justify-between p-4 gap-15'>
+      <div className='w-[40%] px-6 flex flex-col justify-between pt-4 gap-15'>
         <div className="top">
         <h4 className='bg-white/40 rounded-full w-fit px-3'>🔥{elem.status}</h4>
       </div>
@@ -20,8 +20,8 @@ const Card = ({elem}) => {
             <p>{elem.description}</p>
           </div>
         </div>
-        <div className="bot flex gap-5 mt-3">
-          <button className='px-4 py-2 rounded-xl bg-purple-700'><i className="ri-play-large-fill"></i>Watch Now</button>
+        <div className="bot flex gap-5">
+          <button className='px-4 py-2 rounded-xl bg-purple-700 font-medium'><i className="ri-play-large-fill"></i>Watch Now</button>
           <a href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3'><i className="ri-download-2-line"></i></a>
           <a href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3'><i className="ri-more-2-fill"></i></a>
         </div>
