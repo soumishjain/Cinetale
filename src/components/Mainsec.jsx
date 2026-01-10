@@ -1,24 +1,20 @@
 import React from 'react'
-import Topnav from './Topnav'
-import Hero from './Hero'
-import Continue from './Continue'
-import MightLike from './MightLike'
+import Topnav from './Topnav/Topnav'
+import Hero from './Hero/Hero'
+import Continue from './Continue/Continue'
+import MightLike from './Mightlike/MightLike'
 import Netflix from './Netflix'
 import Disney from './Disney'
 import Amazon from './Amazon'
 import Apple from './Apple'
+import Allottsections from './AllottSections/Allottsections'
 
 const Mainsec = () => {
   return (
-    <div className='w-6/7 px-5 pr-8 py-2'>
-      <Topnav />
+    <div className='px-10 w-full h-screen overflow-y-auto noscrolbar pr-8'>
       <Hero />
       <Continue />
-      <MightLike />
-      <Netflix />
-      <Disney />
-      <Amazon />
-      <Apple />
+      <Allottsections />
     </div>
   )
 }

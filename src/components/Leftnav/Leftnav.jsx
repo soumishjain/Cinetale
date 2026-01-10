@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../assets/Moctale-logo-HQ.svg'
+import logo from '../../assets/Moctale-logo-HQ.svg'
 const Leftnav = () => {
   return (
-    <div className='border-2 flex flex-col justify-between rounded-xl border-white/40 w-1/7 bg-black/10 h-full text-white/40 py-4 px-3'>
+    <div className='border-2 flex flex-col justify-between rounded-xl border-white/40 w-[100%] h-full bg-black/20 text-white/40 py-4 px-3'>
       <div className='flex flex-col gap-2'>
         <div className='flex gap-5 justify-center items-center'>
         <img className='object-center object-cover h-5' src={logo} alt="" />
@@ -55,7 +55,7 @@ const Leftnav = () => {
       </div>
       </div>
       </div>
-      <div className='flex justify-start mb-1  items-center gap-2'>
+      <div className='flex justify-start mb-1 mt-60  items-center gap-2'>
         <i className="ri-logout-box-r-line text-2xl"></i>
         <h4>Logout</h4>
       </div>
