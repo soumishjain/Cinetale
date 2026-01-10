@@ -2,8 +2,8 @@ import React from 'react'
 
 const Card = ({elem}) => {
   return (
-    <div className='snap-start cursor-pointer min-w-[250px] flex flex-col gap-2'>
-      <img className='rounded-2xl object-center flex-shrink-0 object-cover ' 
+    <div className='min-w-[280px] cursor-pointer  flex flex-col gap-2'>
+      <img className='w-full h-[380px] rounded-2xl object-center object-cover ' 
       src={elem.poster} alt="" />
         <div className='text-white pl-2'>
             <h3 className='text-xl font-medium'>{elem.name}</h3>

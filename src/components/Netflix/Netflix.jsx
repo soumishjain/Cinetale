@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import { useNavigate } from 'react-router-dom';
 
 const Netflix = ({name}) => {
   const netflixFamous = [
@@ -64,11 +65,12 @@ const Netflix = ({name}) => {
     year: 2020,
   },
 ];
+const navigate = useNavigate()
   return (
     <div className='mt-10'>
       <div className=" top flex justify-between text-white mb-5">
         <h1 className='text-3xl font-medium'>{name}</h1>
-        <button className='bg-white/50 px-4 py-2 rounded-lg font-medium'>See All</button>
+        <button onClick={() => navigate('/netflix')} className='bg-white/50 px-4 py-2 rounded-lg font-medium transition-all ease duration-300 hover:bg-black cursor-pointer'>See All</button>
       </div>
       <div className='overflow-x-auto flex-nowrap noscrolbar flex gap-5 snap-x snap-mandatory snap-smooth'>
         {netflixFamous.map((elem,idx) => {

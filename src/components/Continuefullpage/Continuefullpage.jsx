@@ -1,8 +1,8 @@
 import React from 'react'
-import Card from '../Continue/Card'
+import Card from './Card';
 
-const Continue = () => {
-const mixedContinueWatching = [
+const Continuefullpage = () => {
+    const mixedContinueWatching = [
   {
     name: "The Bear",
     poster: "https://i.pinimg.com/736x/3d/76/97/3d7697de30265e18f16e001506506c8b.jpg",
@@ -92,20 +92,16 @@ const mixedContinueWatching = [
     timeCompleted: "52m 11s",
   },
 ];
-
   return (
-    <div className='mt-10'>
-      <div className="top flex justify-between text-white mb-5">
-        <h1 className='text-2xl'>Continue Watching</h1>
-        <button className='bg-white/50 px-4 py-2 rounded-lg font-medium transition-all ease duration-300 hover:bg-black cursor-pointer'>See All</button>
-      </div>
-      <div className='flex gap-3 flex-nowrap scroll-smooth snap-mandatory snap-x overflow-x-auto noscrolbar'>
-      {mixedContinueWatching.map((elem,idx) => {
-        return <Card elem={elem}/>
-      })}
-      </div>
+     <div className='flex flex-col pl-5 overflow-y-auto'>
+        <h2 className='text-white font-medium  text-3xl'>CONTINUE WATCHING</h2>
+        <div className='flex flex-wrap gap-5 mt-5 mb-5'>
+            {mixedContinueWatching.map((elem,idx) => {
+                return <Card elem={elem} />
+            })}
+        </div>
     </div>
   )
 }
 
-export default Continue
+export default Continuefullpage

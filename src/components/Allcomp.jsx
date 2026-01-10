@@ -7,7 +7,7 @@ import Topnav from './Topnav/Topnav'
 const Allcomp = () => {
   return (
     <div className='w-Screen flex bg-black/80 backdrop-blur-2xl'>
-      <div className='p-4 pr-0'>
+      <div className='w-[17%] p-4 pr-0'>
            <Leftnav />
       </div>
       <div className='flex flex-col p-4 gap-3 w-[85%] h-screen'>
