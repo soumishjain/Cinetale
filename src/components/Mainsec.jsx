@@ -1,12 +1,5 @@
-import React from 'react'
-import Topnav from './Topnav/Topnav'
 import Hero from './Hero/Hero'
 import Continue from './Continue/Continue'
-import MightLike from './Mightlike/MightLike'
-import Netflix from './Netflix/Netflix'
-import Disney from './Disney/Disney'
-import Amazon from './Amazon/Amazon'
-import Apple from './Apple/Apple'
 import Allottsections from './AllottSections/Allottsections'
 
 const Mainsec = () => {

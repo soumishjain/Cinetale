@@ -1,4 +1,3 @@
-import React from 'react'
 import Leftnav from './Leftnav/Leftnav'
 import Mainsec from './Mainsec'
 import Topnav from './Topnav/Topnav'
