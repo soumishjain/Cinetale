@@ -3,16 +3,17 @@ import { useNavigate } from 'react-router'
 
 const Card = ({elem}) => {
   return (
-    <div style={{backgroundImage:`url(${elem.poster})`}} className="snap-start cursor-pointer flex-shrink-0 border-2 border-white/40 bg-cover bg-center bg-black mt-8 w-full rounded-2xl text-white">
+    <div style={{backgroundImage:`url(${elem.poster})`}} className='snap-start border-2 border-white/40 cursor-pointer flex-shrink-0 bg-cover bg-center w-full rounded-2xl'>
+    <div  className=" bg-black/50 w-[100%] rounded-2xl text-white bg-cover bg-center">
       <div className='w-[50%] px-6 flex flex-col justify-between pt-4 gap-15'>
         <div className="top">
-        <h4 className='bg-white/40 rounded-full w-fit px-3'>🔥{elem.status}</h4>
+        <h4 className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>🔥{elem.status}</h4>
       </div>
-      <div className='flex flex-col gap-5'>
-        <div className="mid flex flex-col gap-5">
+      <div className='flex flex-col gap-15'>
+        <div className="mid flex flex-col gap-3">
           <div className='flex gap-3'>
-            <h4 className='bg-white/40 rounded-full w-fit px-3'>{elem.genres[0]}</h4>
-            <h4 className='bg-white/40 rounded-full w-fit px-3'>{elem.genres[1]}</h4>
+            <h4 className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[0]}</h4>
+            <h4 className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[1]}</h4>
           </div>
           <div>
             <h1 className='text-5xl font-medium'>{elem.title}</h1>
@@ -28,6 +29,7 @@ const Card = ({elem}) => {
         </div>
       </div>
       </div>
+    </div>
     </div>
   )
 }

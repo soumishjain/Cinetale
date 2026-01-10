@@ -2,7 +2,7 @@
 const Topnav = () => {
   return (
     <div className=' w-full px-10 flex justify-between items-center'>
-      <div className="left border border-white/40 bg-black/15 text-white/40 p-2 flex justify-center items-center gap-2 px-4 rounded-lg w-100">
+      <div className="left border border-white/40 bg-black/15 text-white/40 p-2 flex justify-center items-center gap-2 px-4 rounded-lg w-[40%]">
         <i className="ri-search-line"></i>
         <input className='w-100 outline-0 border-0' type="text" placeholder='Search for films, directors,or actrors...'/>
       </div>
