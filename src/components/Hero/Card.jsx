@@ -1,9 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({elem}) => {
+  const navigate = useNavigate()
   return (
-    <div style={{backgroundImage:`url(${elem.poster})`}} className='snap-start border-2 border-white/40 cursor-pointer flex-shrink-0 bg-cover bg-center w-full rounded-2xl'>
+    <div onClick={() => navigate(`/${elem.availableOn}/${elem.slug}`)} style={{backgroundImage:`url(${elem.poster})`}} className='snap-start border-2 border-white/40 cursor-pointer flex-shrink-0 bg-cover bg-center w-full rounded-2xl'>
     <div  className=" bg-black/50 w-[100%] rounded-2xl text-white bg-cover bg-center">
       <div className='w-[50%] px-6 flex flex-col justify-between pt-4 gap-15'>
         <div className="top">
@@ -12,11 +13,11 @@ const Card = ({elem}) => {
       <div className='flex flex-col gap-15'>
         <div className="mid flex flex-col gap-3">
           <div className='flex gap-3'>
-            <h4 className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[0]}</h4>
-            <h4 className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[1]}</h4>
+            <h4 onClick={(e) =>{ e.stopPropagation(), navigate(`/genre/${elem.genres[0].toLowerCase()}`)}} className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[0]}</h4>
+            <h4 onClick={(e) =>{ e.stopPropagation(), navigate(`/genre/${elem.genres[1].toLowerCase()}`)}} className='bg-white/40 rounded-full w-fit px-3 transition-all duration-300 ease hover:bg-black'>{elem.genres[1]}</h4>
           </div>
           <div>
-            <h1 className='text-5xl font-medium'>{elem.title}</h1>
+            <h1 className='text-5xl font-medium'>{elem.name}</h1>
           </div>
           <div>
             <p>{elem.description}</p>

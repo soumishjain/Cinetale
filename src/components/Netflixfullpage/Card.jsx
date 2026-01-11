@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({elem}) => {
+  const navigate = useNavigate()
   return (
-    <div className='min-w-[280px] text-white cursor-pointer  flex flex-col gap-2 hover:text-red-600 transition-all ease duration-300'>
+    <div onClick={() => navigate(`/netflix/${elem.slug}`)} className='min-w-[280px] text-white cursor-pointer  flex flex-col gap-2 hover:text-red-600 transition-all ease duration-300'>
       <img className='w-full h-[380px] rounded-2xl object-center object-cover ' 
       src={elem.poster} alt="" />
         <div className=' pl-2'>

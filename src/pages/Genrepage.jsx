@@ -1,6 +1,7 @@
 import React from 'react'
 import Leftnav from '../components/Leftnav/Leftnav'
 import Genrefullpage from '../components/Genrefullpage/Genrefullpage'
+import { Outlet } from 'react-router-dom'
 
 const Genrepage = () => {
   return (
@@ -11,6 +12,7 @@ const Genrepage = () => {
 
         <div className='w-[85%] mt-5 overflow-y-auto h-[96%] noscrolbar'>
         <Genrefullpage />
+        <Outlet />
         </div>
         </div>
   )
