@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 const Card = ({elem}) => {
+  const navigate = useNavigate();
   return (
     <div>
-      <div style={{backgroundImage:`url(${elem.poster})`}}  className="text-white cursor-pointer  min-w-[280px] gap-2 flex flex-col justify-end snap-start h-[180px] p-4 rounded-xl  flex-shrink-0 bg-cover bg-top ">
+      <div  onClick={() => navigate(`/${elem.availableOn}/${elem.slug}`)} style={{backgroundImage:`url(${elem.poster})`}}  className="text-white cursor-pointer  min-w-[280px] gap-2 flex flex-col justify-end snap-start h-[180px] p-4 rounded-xl  flex-shrink-0 bg-cover bg-top ">
         <h1 className='text-xl'>{elem.name}</h1>
         <div className='flex justify-between'>
           <span className='border-white/40 border-1 bg-black/40 px-2 rounded-2xl text-xs flex justify-center items-center'>S{elem.season}.E{elem.episode}</span>
