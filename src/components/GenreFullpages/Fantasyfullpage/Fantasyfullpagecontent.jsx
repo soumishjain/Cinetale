@@ -44,7 +44,7 @@ const Fantasyfullpagecontent = () => {
     title: "Pan's Labyrinth",
     type: "Movie",
     year: 2006,
-    poster: "https://image.tmdb.org/t/p/w500/2VVy7l0M8FbhQJ9zL2pXjlg8R6N.jpg",
+    poster: "https://i.pinimg.com/1200x/27/46/94/274694ea5aa14747e2e7ff52ed3f98ed.jpg",
   },
   {
     title: "Alice in Wonderland",
@@ -86,13 +86,13 @@ const Fantasyfullpagecontent = () => {
     title: "Clash of the Titans",
     type: "Movie",
     year: 2010,
-    poster: "https://image.tmdb.org/t/p/w500/wjzPZr2gM6p4u2pN4hMi6XH4g3p.jpg",
+    poster: "https://i.pinimg.com/736x/c0/52/4c/c0524cd251c5af7879eb716556788d48.jpg",
   },
   {
     title: "Percy Jackson & the Olympians: The Lightning Thief",
     type: "Movie",
     year: 2010,
-    poster: "https://image.tmdb.org/t/p/w500/3lFJx6zCzXzYhC2v5pNnX7gF4fQ.jpg",
+    poster: "https://i.pinimg.com/736x/fc/18/b9/fc18b9b5058163cdb5ed2dfb9bcda2b0.jpg",
   },
   {
     title: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
@@ -130,25 +130,25 @@ const Fantasyfullpagecontent = () => {
     title: "Shadow and Bone",
     type: "Series",
     year: 2021,
-    poster: "https://image.tmdb.org/t/p/w500/mrVoyDFiDSdWnbq4DfC0F5jHR6Z.jpg",
+    poster: "https://i.pinimg.com/1200x/21/df/b5/21dfb5a31e2b9f6e5e93fed682e96300.jpg",
   },
   {
     title: "Merlin",
     type: "Series",
     year: 2008,
-    poster: "https://image.tmdb.org/t/p/w500/5mXvCwFqRx7P7eZG5hzz1xYpZp.jpg",
+    poster: "https://i.pinimg.com/736x/ee/a3/0b/eea30b8f38d99c5932e60797049a98c0.jpg",
   },
   {
     title: "His Dark Materials",
     type: "Series",
     year: 2019,
-    poster: "https://image.tmdb.org/t/p/w500/9yKCJzU0uD9Kp5QZ4ZJxN8gk4p.jpg",
+    poster: "https://i.pinimg.com/736x/26/aa/f2/26aaf2d4bdcfaf65c09082db60d2a9cf.jpg",
   },
   {
     title: "Carnival Row",
     type: "Series",
     year: 2019,
-    poster: "https://image.tmdb.org/t/p/w500/7p3hX5r0rQ0s4kTtq4E0tE5rF3Z.jpg",
+    poster: "https://i.pinimg.com/736x/76/1a/17/761a177b3d9e89c9e3b239904f14eed8.jpg",
   },
   {
     title: "The Sandman",
@@ -160,7 +160,7 @@ const Fantasyfullpagecontent = () => {
     title: "Once Upon a Time",
     type: "Series",
     year: 2011,
-    poster: "https://image.tmdb.org/t/p/w500/49Zck6ZfL6k4R0S8QpZp5p5p.jpg",
+    poster: "https://i.pinimg.com/736x/9f/cd/9a/9fcd9a480c7be7ab06f3ffd70823e9e1.jpg",
   },
   {
     title: "The Wheel of Time",
@@ -178,13 +178,13 @@ const Fantasyfullpagecontent = () => {
     title: "Locke & Key",
     type: "Series",
     year: 2020,
-    poster: "https://image.tmdb.org/t/p/w500/7V5iCwFZqR5lQqZ6p5U4B5mCk4X.jpg",
+    poster: "https://i.pinimg.com/1200x/16/94/7a/16947a66dee1a11c289d6d7207e48f8c.jpg",
   },
   {
     title: "Sweet Tooth",
     type: "Series",
     year: 2021,
-    poster: "https://image.tmdb.org/t/p/w500/k7Hk0U9T0lHnU1bZs8oYpZp.jpg",
+    poster: "https://i.pinimg.com/736x/7d/80/3f/7d803f5c702e8d3e7acbc7f721a8b4f3.jpg",
   },
 ];
 

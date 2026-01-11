@@ -24,8 +24,8 @@ const Card = ({elem}) => {
         </div>
         <div className="bot flex gap-5 mb-10">
           <a  href={elem.platform} target='_blank' className='px-4 py-2 rounded-xl bg-purple-700 font-medium transition-all ease duration-300 hover:bg-black'><i className="ri-play-large-fill"></i>Watch Now</a>
-          <a  href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3 transition-all ease duration-300 hover:bg-black'><i className="ri-download-2-line"></i></a>
-          <a  href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3 transition-all ease duration-300 hover:bg-black'><i className="ri-more-2-fill"></i></a>
+          <a onClick={(e) => e.preventDefault()} href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3 transition-all ease duration-300 hover:bg-black'><i className="ri-download-2-line"></i></a>
+          <a  onClick={(e) => e.preventDefault()} href="" className='bg-white/50 rounded-xl text-xl p-2 flex justify-center items-center px-3 transition-all ease duration-300 hover:bg-black'><i className="ri-more-2-fill"></i></a>
         </div>
       </div>
       </div>

@@ -136,7 +136,7 @@ const Thrillerfullpagecontent = () => {
     title: "You",
     type: "Series",
     year: 2018,
-    poster: "https://lh3.googleusercontent.com/proxy/87c9QSrXKWiAtCtS0dWxg-u_mSw-Ippfm1hKkFYplN64yuS2Et8xEpTrgnt2G90tgLem9zbKh3uo5L_iaFhr8cXyBh4",
+    poster: "https://i.pinimg.com/1200x/43/b2/8e/43b28e0d0a17500db07e2bdadf086b37.jpg",
   },
   {
     title: "Money Heist",
@@ -148,7 +148,7 @@ const Thrillerfullpagecontent = () => {
     title: "The Night Of",
     type: "Series",
     year: 2016,
-    poster: "https://lh6.googleusercontent.com/proxy/f1G6cz1MruiOiN3cn6pKYzK8pfbnhLv6IJimPzd7I8RGhBRMHBswut-4gUMAVavn6x5XA4PvHq45uB1zf9FapI7YRjr0kN0",
+    poster: "https://i.pinimg.com/736x/d2/f2/db/d2f2db05681115727ad4e67e9aa9000d.jpg",
   },
   {
     title: "The Sinner",

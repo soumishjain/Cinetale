@@ -2,209 +2,215 @@ import Card from "../Card";
 
 
 const DramaFullpageContent = () => {
-         const dramalist = [
+  const dramaList = [
+  // 🎥 MOVIES
   {
-    name: "Game of Thrones",
-    poster: "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
-    type: "Series",
-    year: 2011,
-  },
-  {
-    name: "House of the Dragon",
-    poster: "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
-    type: "Series",
-    year: 2022,
-  },
-  {
-    name: "The Mandalorian",
-    poster: "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
-    type: "Series",
-    year: 2019,
-  },
-  {
-    name: "Loki",
-    poster: "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
-    type: "Series",
-    year: 2021,
-  },
-  {
-    name: "WandaVision",
-    poster: "https://image.tmdb.org/t/p/w500/glKDfE6btIRcVB5zrjspRIs4r52.jpg",
-    type: "Series",
-    year: 2021,
-  },
-  {
-    name: "Moon Knight",
-    poster: "https://i.pinimg.com/736x/7b/c2/e5/7bc2e55176c3763545d869cc1d33ae15.jpg",
-    type: "Series",
-    year: 2022,
-  },
-  {
-    name: "Ms. Marvel",
-    poster: "https://i.pinimg.com/736x/64/47/d6/6447d68a35088e49e1a5967b44ca6cd9.jpg",
-    type: "Series",
-    year: 2022,
-  },
-  {
-    name: "The Falcon and the Winter Soldier",
-    poster: "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
-    type: "Series",
-    year: 2021,
-  },
-  {
-    name: "Secret Invasion",
-    poster: "https://i.pinimg.com/1200x/53/fb/96/53fb96c05d962404b3a41e22e77c08dc.jpg",
-    type: "Series",
-    year: 2023,
-  },
-  {
-    name: "She-Hulk: Attorney at Law",
-    poster: "https://i.pinimg.com/736x/5e/bd/21/5ebd212448e48f7cc3a6178818098dde.jpg",
-    type: "Series",
-    year: 2022,
-  },
-
-  {
-    name: "Aarya",
-    poster: "https://i.pinimg.com/736x/99/cc/93/99cc938564619f66de419b029fb5fca5.jpg",
-    type: "Series",
-    year: 2020,
-  },
-  {
-    name: "Special OPS",
-    poster: "https://i.pinimg.com/736x/73/ca/38/73ca384c28486c5a43b678eca4a55d61.jpg",
-    type: "Series",
-    year: 2020,
-  },
-  {
-    name: "The Night Manager (India)",
-    poster: "https://i.pinimg.com/1200x/72/75/44/727544f44e7dad20a55611fad225a240.jpg",
-    type: "Series",
-    year: 2023,
-  },
-  {
-    name: "Criminal Justice",
-    poster: "https://i.pinimg.com/736x/58/50/e7/5850e78dae228f45d2bae3b051f27d36.jpg",
-    type: "Series",
-    year: 2019,
-  },
-  {
-    name: "Rudra: The Edge of Darkness",
-    poster: "https://i.pinimg.com/736x/53/09/0d/53090d40246e5e1b891948f83e4aeb4a.jpg",
-    type: "Series",
-    year: 2022,
-  },
-
-  {
-    name: 'IT: Welcome to Derry',
-    poster: 'https://i.pinimg.com/736x/32/96/aa/3296aa798707e25d55d702f45d736bd2.jpg',
-    type: 'Series',
-    year: 2025,
-  },
-  {
-    name: "Pirates of the Carrebian : At World's End",
-    poster: "https://i.pinimg.com/1200x/78/d4/1f/78d41fa5a8a5f383d0444f94115843a3.jpg",
+    title: "Forrest Gump",
     type: "Movie",
-    year: 2007,
+    year: 1994,
+    poster: "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
   },
   {
-    name: "Avengers: Endgame",
-    poster: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    title: "The Shawshank Redemption",
+    type: "Movie",
+    year: 1994,
+    poster: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+  },
+  {
+    title: "The Green Mile",
+    type: "Movie",
+    year: 1999,
+    poster: "https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg",
+  },
+  {
+    title: "Fight Club",
+    type: "Movie",
+    year: 1999,
+    poster: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+  },
+  {
+    title: "The Social Network",
+    type: "Movie",
+    year: 2010,
+    poster: "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+  },
+  {
+    title: "Whiplash",
+    type: "Movie",
+    year: 2014,
+    poster: "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+  },
+  {
+    title: "Parasite",
     type: "Movie",
     year: 2019,
+    poster: "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
   },
   {
-    name: "Avengers: Infinity War",
-    poster: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    title: "Joker",
     type: "Movie",
-    year: 2018,
+    year: 2019,
+    poster: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
   },
   {
-    name: "Iron Man",
-    poster: "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+    title: "A Beautiful Mind",
+    type: "Movie",
+    year: 2001,
+    poster: "https://image.tmdb.org/t/p/w500/zwzWCmH72OSC9NA0ipoqw5Zjya8.jpg",
+  },
+  {
+    title: "The Pursuit of Happyness",
+    type: "Movie",
+    year: 2006,
+    poster: "https://image.tmdb.org/t/p/w500/f6l9rghSHORkWLurUGJhaKAiyjY.jpg",
+  },
+  {
+    title: "Slumdog Millionaire",
     type: "Movie",
     year: 2008,
+    poster: "https://i.pinimg.com/736x/fb/e4/fd/fbe4fd272909306ca1cd909c978092cb.jpg",
   },
   {
-    name: "Black Panther",
-    poster: "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    title: "12 Years a Slave",
     type: "Movie",
-    year: 2018,
+    year: 2013,
+    poster: "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
   },
   {
-    name: "Doctor Strange",
-    poster: "https://image.tmdb.org/t/p/w500/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg",
+    title: "The Pianist",
+    type: "Movie",
+    year: 2002,
+    poster: "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+  },
+  {
+    title: "Manchester by the Sea",
     type: "Movie",
     year: 2016,
+    poster: "https://i.pinimg.com/736x/e8/53/0b/e8530bbbd1e8a861830a0e7c9a89a6fc.jpg",
   },
   {
-    name: "Thor: Ragnarok",
-    poster: "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+    title: "3 Idiots",
     type: "Movie",
-    year: 2017,
-  },
-
-  {
-    name: "RRR",
-    poster: "https://image.tmdb.org/t/p/w500/wE0I6efAW4cDDmZQWtwZMOW44EJ.jpg",
-    type: "Movie",
-    year: 2022,
+    year: 2009,
+    poster: "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg",
   },
   {
-    name: "Brahmāstra",
-    poster: "https://i.pinimg.com/1200x/54/d1/cc/54d1cc315cbf1e9cbbe74c075a3bc0c7.jpg",
+    title: "Taare Zameen Par",
     type: "Movie",
-    year: 2022,
+    year: 2007,
+    poster: "https://i.pinimg.com/736x/73/62/cb/7362cb2629d1411725480156f6d717e8.jpg",
   },
   {
-    name: "Tanhaji",
-    poster: "https://i.pinimg.com/1200x/52/cc/53/52cc536965bf9b15bbe533eebbfa9abe.jpg",
+    title: "Rang De Basanti",
     type: "Movie",
-    year: 2020,
-  },
-  {
-    name: "Chhichhore",
-    poster: "https://i.pinimg.com/1200x/74/c6/58/74c658e3ab3b01dd712ad2b1d50800a6.jpg",
-    type: "Movie",
-    year: 2019,
+    year: 2006,
+    poster: "https://i.pinimg.com/1200x/a9/32/f4/a932f49a73013beef320b45c9da87fb9.jpg",
   },
 
+  // 📺 SERIES
   {
-    name: "Frozen II",
-    poster: "https://image.tmdb.org/t/p/w500/mINJaa34MtknCYl5AjtNJzWj8cD.jpg",
-    type: "Movie",
-    year: 2019,
+    title: "Breaking Bad",
+    type: "Series",
+    year: 2008,
+    poster: "https://image.tmdb.org/t/p/w500/3xnWaLQjelJDDF7LT1WBo6f4BRe.jpg",
   },
   {
-    name: "The Lion King",
-    poster: "https://image.tmdb.org/t/p/w500/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
-    type: "Movie",
-    year: 2019,
+    title: "Better Call Saul",
+    type: "Series",
+    year: 2015,
+    poster: "https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
   },
   {
-    name: "Toy Story 4",
-    poster: "https://image.tmdb.org/t/p/w500/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
-    type: "Movie",
-    year: 2019,
+    title: "The Crown",
+    type: "Series",
+    year: 2016,
+    poster: "https://i.pinimg.com/736x/5a/e0/db/5ae0db4ac98161f3ccbdf1c507b8672f.jpg",
   },
   {
-    name: "Coco",
-    poster: "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
-    type: "Movie",
+    title: "This Is Us",
+    type: "Series",
+    year: 2016,
+    poster: "https://i.pinimg.com/736x/97/db/54/97db54b497b958ecc392a61e5fb2b00d.jpg",
+  },
+  {
+    title: "Peaky Blinders",
+    type: "Series",
+    year: 2013,
+    poster: "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
+  },
+  {
+    title: "Chernobyl",
+    type: "Series",
+    year: 2019,
+    poster: "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+  },
+  {
+    title: "The Sopranos",
+    type: "Series",
+    year: 1999,
+    poster: "https://i.pinimg.com/736x/6f/d6/a3/6fd6a3c4abf9167e3e6c4970eab7b2e2.jpg",
+  },
+  {
+    title: "Mad Men",
+    type: "Series",
+    year: 2007,
+    poster: "https://i.pinimg.com/1200x/55/b1/7f/55b17f5689f90f26e3972fd3c26d2ac8.jpg",
+  },
+  {
+    title: "The Wire",
+    type: "Series",
+    year: 2002,
+    poster: "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
+  },
+  {
+    title: "Succession",
+    type: "Series",
+    year: 2018,
+    poster: "https://i.pinimg.com/1200x/e0/94/85/e094850d9cca79d9ad31803de391312d.jpg",
+  },
+  {
+    title: "Euphoria",
+    type: "Series",
+    year: 2019,
+    poster: "https://image.tmdb.org/t/p/w500/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
+  },
+  {
+    title: "Ozark",
+    type: "Series",
     year: 2017,
+    poster: "https://i.pinimg.com/736x/ae/15/a1/ae15a133fe9701cfa48191f87613d707.jpg",
   },
   {
-    name: "Soul",
-    poster: "https://image.tmdb.org/t/p/w500/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg",
-    type: "Movie",
+    title: "Delhi Crime",
+    type: "Series",
+    year: 2019,
+    poster: "https://i.pinimg.com/1200x/ae/c9/8b/aec98bc9568448efcb7c12a979658272.jpg",
+  },
+  {
+    title: "Sacred Games",
+    type: "Series",
+    year: 2018,
+    poster: "https://i.pinimg.com/1200x/7f/6d/ca/7f6dca071b1d01c7bfd58a25b3454c65.jpg",
+  },
+  {
+    title: "Band of Brothers",
+    type: "Series",
+    year: 2001,
+    poster: "https://i.pinimg.com/736x/c6/8a/ff/c68aff627b8cc82628160b9f39b587e9.jpg",
+  },
+  {
+    title: "Normal People",
+    type: "Series",
     year: 2020,
+    poster: "https://i.pinimg.com/736x/56/10/ca/5610ca2f562c621063fd57bdb02a10b1.jpg",
   },
 ];
+
   return (
     <div className='flex flex-col pl-5 overflow-y-auto'>
         <h2 className='text-white font-medium  text-3xl'>DRAMA</h2>
         <div className='flex flex-wrap gap-5 mt-5 mb-5'>
-            {dramalist.map((elem,idx) => {
+            {dramaList.map((elem,idx) => {
                 return <Card elem={elem} />
             })}
         </div>
