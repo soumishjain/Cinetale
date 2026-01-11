@@ -36,7 +36,7 @@ const Disney = ({name}) => {
   },
   {
     name: "Aarya",
-    poster: "https://i.pinimg.com/736x/99/cc/93/99cc938564619f66de419b029fb5fca5.jpg",
+    poster: "https://i.pinimg.com/1200x/3a/15/e8/3a15e8c6cde87758139278ae26a5c0ac.jpg",
     type: "Series",
     year: 2020,
   },
@@ -48,7 +48,7 @@ const Disney = ({name}) => {
   },
   {
     name: "Special Ops",
-    poster: "https://i.pinimg.com/736x/73/ca/38/73ca384c28486c5a43b678eca4a55d61.jpg",
+    poster: "https://i.pinimg.com/1200x/c4/ad/b1/c4adb1624fbfc176c57dd1acc13f3819.jpg",
     type: "Series",
     year: 2020,
   },
@@ -60,7 +60,7 @@ const Disney = ({name}) => {
   },
   {
     name: "Brahmāstra: Part One – Shiva",
-    poster: "https://i.pinimg.com/1200x/8e/c9/20/8ec9208a24ab6ba4d085e556fd6a7ddc.jpg",
+    poster: "https://i.pinimg.com/1200x/98/3b/93/983b9336b6d69fe17ae6b483c0ece9c1.jpg",
     type: "Movie",
     year: 2022,
   },
