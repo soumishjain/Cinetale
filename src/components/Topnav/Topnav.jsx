@@ -1,4 +1,3 @@
-
 const Topnav = () => {
   return (
     <div className=' w-full px-10 flex justify-between items-center'>
