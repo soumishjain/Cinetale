@@ -4,7 +4,7 @@ import Allottsections from './AllottSections/Allottsections'
 
 const Mainsec = () => {
   return (
-    <div className='px-10 w-full h-screen overflow-y-auto noscrolbar pr-8'>
+    <div className='sm:px-10 w-[100%] sm:pr-5 h-screen pt-4 pl-4 overflow-x-hidden overflow-y-auto noscrolbar sm:pr-8'>
       <Hero />
       <Continue />
       <Allottsections />

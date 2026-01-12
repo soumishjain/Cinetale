@@ -199,7 +199,7 @@ const HorrorfullpageContent = () => {
   },
 ];
   return (
-    <div className='flex flex-col pl-5 overflow-y-auto'>
+    <div className='flex flex-col sm:pl-5 overflow-y-auto'>
         <h2 className='text-white font-medium  text-3xl'>HORROR</h2>
         <div className='flex flex-wrap gap-5 mt-5 mb-5'>
             {horrortitle.map((elem,idx) => {

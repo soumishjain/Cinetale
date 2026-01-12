@@ -61,7 +61,7 @@ const Hero = () => {
 ];
 
   return (
-    <div className='noscrolbar flex flex-nowrap overflow-x-auto gap-10 snap-x snap-mandatory scroll-smoodh'>
+    <div className='noscrolbar sm-h-full h-[400px] flex flex-nowrap overflow-x-auto gap-10 snap-x snap-mandatory scroll-smoodh'>
       {featuredTitles.map((elem,idx) => {
         return <Card elem={elem}/>
       })}

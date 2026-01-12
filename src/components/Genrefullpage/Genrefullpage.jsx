@@ -86,17 +86,17 @@ const Genrefullpage = () => {
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-black/80 backdrop-blur-2xl">
 
-      <div className="w-[17%] p-4 pr-0">
+      <div className="hidden sm:block w-[17%] p-4 pr-0">
         <Leftnav />
       </div>
 
-      <div className="w-[85%] mt-5 overflow-y-auto h-[96%] noscrolbar pl-5">
+      <div className="w-[95%] mt-5 overflow-y-auto h-[96%] noscrolbar pl-5">
         
         {
             !type && (
                 <>
                 <h2 className='text-white font-medium  text-3xl'>GENRES</h2>
-        <div className='flex flex-wrap gap-5 mt-5 mb-5'>
+        <div className='flex sm:justify-start flex-wrap gap-5 mt-5 mb-5'>
             {movieGenres.map((elem,idx) => {
                 return <Card elem={elem} />
             })}

@@ -188,7 +188,7 @@ const ActionfullpageContent = () => {
 ];
 
   return (
-    <div className='flex flex-col pl-5 overflow-y-auto'>
+    <div className='flex flex-col sm:pl-5 overflow-y-auto'>
         <h2 className='text-white font-medium  text-3xl'>ACTION</h2>
         <div className='flex flex-wrap gap-5 mt-5 mb-5'>
             {actiontitle.map((elem,idx) => {

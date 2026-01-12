@@ -41,19 +41,19 @@ if(!title){
     )
   }
   return (
-    <div className='w-screen h-screen bg-red-950'>
-      <div className='w-[100%] h-[100%] bg-black/50 flex'>
-        <div className="left w-[40%] flex justify-center items-center">
-          <img className='shadow-[150px_50px_50px_rgba(0,0,0,0.7)] rounded-2xl w-[80%]' src={title.poster} alt="" />
+    <div className='w-screen sm:h-screen bg-red-950'>
+      <div className='w-[100%] h-[100%] bg-black/50 flex flex-col sm:flex-row pt-5 sm:pt-0'>
+        <div className="left w-[100%] sm:w-[40%] flex justify-center items-center">
+          <img className='shadow-[20px_50px_50px_rgba(0,0,0,0.7)] sm:shadow-[150px_50px_50px_rgba(0,0,0,0.7)] rounded-2xl w-[60%] sm:w-[80%]' src={title.poster} alt="" />
         </div>
-        <div className="right text-white flex flex-col w-[60%] justify-between py-15">
-          <div className='flex gap-3 text-white py-15'>
+        <div className="right text-white flex flex-col sm:w-[60%] justify-between py-15">
+          <div className='flex justify-center sm:justify-start gap-3 text-white sm:py-15'>
             {title.genre.map(genre => {
             return <span onClick={() => navigate(`/genre/${genre.toLowerCase()}`)} className='bg-white/40 cursor-pointer transition-all ease duration-300 hover:bg-black px-4 rounded-2xl'>{genre}</span>
           })}
           </div>
-          <div className='py-10 flex  flex-col gap-7 items-start pr-35'>
-            <div className='flex gap-5 justify-center items-center'>
+          <div className='py-10 flex  flex-col gap-7 items-start justify-center px-2 sm:pr-35'>
+            <div className='flex gap-5 w-[100%] sm:justify-start justify-center items-center'>
             <a href={title.ottLink} target='_blank' className='px-4 py-2 rounded-xl bg-purple-700 font-medium transition-all ease duration-300 hover:bg-black'><i className="ri-play-large-fill"></i>Watch Now</a>
             <img className='w-[100px]' src={title.ottIcon} alt="" />
             </div>
