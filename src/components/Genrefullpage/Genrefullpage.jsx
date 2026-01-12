@@ -3,7 +3,7 @@ import Card from './Card';
 import { Outlet, useParams } from 'react-router-dom';
 import Leftnav from '../Leftnav/Leftnav';
 import ActionfullpageContent from '../GenreFullpages/Actionfullpage/ActionfullpageContent';
-import DramaFullpageContent from '../GenreFullpages/DramaFullpage/DramaFullPageContent';
+import DramaFullpageContent from '../GenreFullpages/Dramafullpage/DramaFullPageContent';
 import ScififullpageContent from '../GenreFullpages/Scififullpage/Scififullpagecontent';
 import HorrorfullpageContent from '../GenreFullpages/Horrorfullpage/Horrorfullpagecontent';
 import Romancefullpagecontent from '../GenreFullpages/Romancefullpage/Romancefullpagecontent';
